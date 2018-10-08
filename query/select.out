@@ -1,0 +1,187 @@
+2018-10-08 12:24:53 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-10-08 12:24:54 INFO  HiveMetaStore:589 - 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+2018-10-08 12:24:54 INFO  ObjectStore:289 - ObjectStore, initialize called
+2018-10-08 12:24:54 INFO  Persistence:77 - Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+2018-10-08 12:24:54 INFO  Persistence:77 - Property datanucleus.cache.level2 unknown - will be ignored
+2018-10-08 12:24:55 INFO  ObjectStore:370 - Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+2018-10-08 12:24:55 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2018-10-08 12:24:55 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2018-10-08 12:24:55 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2018-10-08 12:24:55 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2018-10-08 12:24:55 INFO  Query:77 - Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+2018-10-08 12:24:55 INFO  MetaStoreDirectSql:139 - Using direct SQL, underlying DB is DERBY
+2018-10-08 12:24:55 INFO  ObjectStore:272 - Initialized ObjectStore
+2018-10-08 12:24:56 INFO  HiveMetaStore:663 - Added admin role in metastore
+2018-10-08 12:24:56 INFO  HiveMetaStore:672 - Added public role in metastore
+2018-10-08 12:24:56 INFO  HiveMetaStore:712 - No user is added in admin role, since config is empty
+2018-10-08 12:24:56 INFO  HiveMetaStore:746 - 0: get_all_databases
+2018-10-08 12:24:56 INFO  audit:371 - ugi=edoardo	ip=unknown-ip-addr	cmd=get_all_databases	
+2018-10-08 12:24:56 INFO  HiveMetaStore:746 - 0: get_functions: db=default pat=*
+2018-10-08 12:24:56 INFO  audit:371 - ugi=edoardo	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+2018-10-08 12:24:56 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+2018-10-08 12:24:56 INFO  HiveMetaStore:746 - 0: get_functions: db=tpcds_db pat=*
+2018-10-08 12:24:56 INFO  audit:371 - ugi=edoardo	ip=unknown-ip-addr	cmd=get_functions: db=tpcds_db pat=*	
+2018-10-08 12:24:56 INFO  SessionState:641 - Created local directory: /var/folders/z2/52r6zpqx4g79gdsyz01h48_w0000gn/T/04cffe3d-a813-40f3-8fea-586570a30d0e_resources
+2018-10-08 12:24:56 INFO  SessionState:641 - Created HDFS directory: /tmp/hive/edoardo/04cffe3d-a813-40f3-8fea-586570a30d0e
+2018-10-08 12:24:56 INFO  SessionState:641 - Created local directory: /var/folders/z2/52r6zpqx4g79gdsyz01h48_w0000gn/T/edoardo/04cffe3d-a813-40f3-8fea-586570a30d0e
+2018-10-08 12:24:56 INFO  SessionState:641 - Created HDFS directory: /tmp/hive/edoardo/04cffe3d-a813-40f3-8fea-586570a30d0e/_tmp_space.db
+2018-10-08 12:24:56 INFO  SparkContext:54 - Running Spark version 2.3.2
+2018-10-08 12:24:56 INFO  SparkContext:54 - Submitted application: SparkSQL::192.168.0.101
+2018-10-08 12:24:56 INFO  SecurityManager:54 - Changing view acls to: edoardo
+2018-10-08 12:24:56 INFO  SecurityManager:54 - Changing modify acls to: edoardo
+2018-10-08 12:24:56 INFO  SecurityManager:54 - Changing view acls groups to: 
+2018-10-08 12:24:56 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2018-10-08 12:24:56 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(edoardo); groups with view permissions: Set(); users  with modify permissions: Set(edoardo); groups with modify permissions: Set()
+2018-10-08 12:24:56 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 50057.
+2018-10-08 12:24:56 INFO  SparkEnv:54 - Registering MapOutputTracker
+2018-10-08 12:24:56 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2018-10-08 12:24:56 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2018-10-08 12:24:56 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2018-10-08 12:24:56 INFO  DiskBlockManager:54 - Created local directory at /private/var/folders/z2/52r6zpqx4g79gdsyz01h48_w0000gn/T/blockmgr-720d8928-c072-4526-b2bf-c462dee4d0b6
+2018-10-08 12:24:56 INFO  MemoryStore:54 - MemoryStore started with capacity 366.3 MB
+2018-10-08 12:24:56 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2018-10-08 12:24:56 INFO  log:192 - Logging initialized @4292ms
+2018-10-08 12:24:56 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2018-10-08 12:24:56 INFO  Server:419 - Started @4356ms
+2018-10-08 12:24:56 INFO  AbstractConnector:278 - Started ServerConnector@445821a6{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-10-08 12:24:56 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@45292ec1{/jobs,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@37a9b687{/jobs/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@525b1b70{/jobs/job,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@16f0ec18{/jobs/job/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6c977dcf{/stages,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@661d6bb6{/stages/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@733fb462{/stages/stage,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@385dfb63{/stages/stage/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@364fd4ae{/stages/pool,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@245253d8{/stages/pool/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@12417468{/storage,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@459003a0{/storage/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@d325518{/storage/rdd,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3b481bf5{/storage/rdd/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2233cac0{/environment,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@67fb5025{/environment/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@787e4357{/executors,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@392781e{/executors/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3fcbc766{/executors/threadDump,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@28cd2c2{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@8e25d3f{/static,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6af5b246{/,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@31723307{/api,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@a85644c{/jobs/job/kill,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@8054fe2{/stages/stage/kill,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://192.168.0.101:4040
+2018-10-08 12:24:57 INFO  Executor:54 - Starting executor ID driver on host localhost
+2018-10-08 12:24:57 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 50058.
+2018-10-08 12:24:57 INFO  NettyBlockTransferService:54 - Server created on 192.168.0.101:50058
+2018-10-08 12:24:57 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2018-10-08 12:24:57 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, 192.168.0.101, 50058, None)
+2018-10-08 12:24:57 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 192.168.0.101:50058 with 366.3 MB RAM, BlockManagerId(driver, 192.168.0.101, 50058, None)
+2018-10-08 12:24:57 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, 192.168.0.101, 50058, None)
+2018-10-08 12:24:57 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, 192.168.0.101, 50058, None)
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7ddcb0dc{/metrics/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  SharedState:54 - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/Users/edoardo/Documents/BDMA/Data_Warehouses/Project/ddl/spark-warehouse/').
+2018-10-08 12:24:57 INFO  SharedState:54 - Warehouse path is 'file:/Users/edoardo/Documents/BDMA/Data_Warehouses/Project/ddl/spark-warehouse/'.
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2ca3d826{/SQL,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5d194314{/SQL/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@463afa6e{/SQL/execution,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7b96de8d{/SQL/execution/json,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@640d604{/static/sql,null,AVAILABLE,@Spark}
+2018-10-08 12:24:57 INFO  HiveUtils:54 - Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+2018-10-08 12:24:57 INFO  HiveClientImpl:54 - Warehouse location for Hive client (version 1.2.2) is file:/Users/edoardo/Documents/BDMA/Data_Warehouses/Project/ddl/spark-warehouse/
+2018-10-08 12:24:57 INFO  metastore:291 - Mestastore configuration hive.metastore.warehouse.dir changed from /user/hive/warehouse to file:/Users/edoardo/Documents/BDMA/Data_Warehouses/Project/ddl/spark-warehouse/
+2018-10-08 12:24:57 INFO  HiveMetaStore:746 - 0: Shutting down the object store...
+2018-10-08 12:24:57 INFO  audit:371 - ugi=edoardo	ip=unknown-ip-addr	cmd=Shutting down the object store...	
+2018-10-08 12:24:57 INFO  HiveMetaStore:746 - 0: Metastore shutdown complete.
+2018-10-08 12:24:57 INFO  audit:371 - ugi=edoardo	ip=unknown-ip-addr	cmd=Metastore shutdown complete.	
+2018-10-08 12:24:57 INFO  HiveMetaStore:746 - 0: get_database: default
+2018-10-08 12:24:57 INFO  audit:371 - ugi=edoardo	ip=unknown-ip-addr	cmd=get_database: default	
+2018-10-08 12:24:57 INFO  HiveMetaStore:589 - 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+2018-10-08 12:24:57 INFO  ObjectStore:289 - ObjectStore, initialize called
+2018-10-08 12:24:57 INFO  Query:77 - Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+2018-10-08 12:24:57 INFO  MetaStoreDirectSql:139 - Using direct SQL, underlying DB is DERBY
+2018-10-08 12:24:57 INFO  ObjectStore:272 - Initialized ObjectStore
+2018-10-08 12:24:57 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+2018-10-08 12:24:57 INFO  HiveMetaStore:746 - 0: get_database: global_temp
+2018-10-08 12:24:57 INFO  audit:371 - ugi=edoardo	ip=unknown-ip-addr	cmd=get_database: global_temp	
+2018-10-08 12:24:57 WARN  ObjectStore:568 - Failed to get database global_temp, returning NoSuchObjectException
+2018-10-08 12:24:59 INFO  HiveMetaStore:746 - 0: get_database: tpcds_db
+2018-10-08 12:24:59 INFO  audit:371 - ugi=edoardo	ip=unknown-ip-addr	cmd=get_database: tpcds_db	
+2018-10-08 12:24:59 INFO  SparkSQLCLIDriver:951 - Time taken: 1.298 seconds
+2018-10-08 12:24:59 INFO  HiveMetaStore:746 - 0: get_table : db=tpcds_db tbl=web_site
+2018-10-08 12:24:59 INFO  audit:371 - ugi=edoardo	ip=unknown-ip-addr	cmd=get_table : db=tpcds_db tbl=web_site	
+2018-10-08 12:24:59 WARN  Utils:66 - Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+2018-10-08 12:24:59 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2018-10-08 12:24:59 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2018-10-08 12:24:59 INFO  FileSourceStrategy:54 - Output Data Schema: struct<web_site_sk: int, web_site_id: string, web_rec_start_date: string, web_rec_end_date: string, web_name: string ... 24 more fields>
+2018-10-08 12:24:59 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2018-10-08 12:25:00 INFO  CodeGenerator:54 - Code generated in 233.221636 ms
+2018-10-08 12:25:00 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 288.8 KB, free 366.0 MB)
+2018-10-08 12:25:00 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 24.6 KB, free 366.0 MB)
+2018-10-08 12:25:00 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 192.168.0.101:50058 (size: 24.6 KB, free: 366.3 MB)
+2018-10-08 12:25:00 INFO  SparkContext:54 - Created broadcast 0 from processCmd at CliDriver.java:376
+2018-10-08 12:25:00 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2018-10-08 12:25:00 INFO  SparkContext:54 - Starting job: processCmd at CliDriver.java:376
+2018-10-08 12:25:00 INFO  DAGScheduler:54 - Got job 0 (processCmd at CliDriver.java:376) with 1 output partitions
+2018-10-08 12:25:00 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (processCmd at CliDriver.java:376)
+2018-10-08 12:25:00 INFO  DAGScheduler:54 - Parents of final stage: List()
+2018-10-08 12:25:00 INFO  DAGScheduler:54 - Missing parents: List()
+2018-10-08 12:25:00 INFO  DAGScheduler:54 - Submitting ResultStage 0 (MapPartitionsRDD[2] at processCmd at CliDriver.java:376), which has no missing parents
+2018-10-08 12:25:00 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 21.5 KB, free 366.0 MB)
+2018-10-08 12:25:00 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.5 KB, free 366.0 MB)
+2018-10-08 12:25:00 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 192.168.0.101:50058 (size: 6.5 KB, free: 366.3 MB)
+2018-10-08 12:25:00 INFO  SparkContext:54 - Created broadcast 1 from broadcast at DAGScheduler.scala:1039
+2018-10-08 12:25:00 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at processCmd at CliDriver.java:376) (first 15 tasks are for partitions Vector(0))
+2018-10-08 12:25:00 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 1 tasks
+2018-10-08 12:25:00 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8434 bytes)
+2018-10-08 12:25:00 INFO  Executor:54 - Running task 0.0 in stage 0.0 (TID 0)
+2018-10-08 12:25:00 INFO  FileScanRDD:54 - Reading File path: file:///Users/edoardo/Documents/BDMA/Data_Warehouses/Project/ddl/spark-warehouse/tpcds_db.db/web_site/part-00000-7cde54e6-c004-4d0d-8c17-89a470c5ee6a-c000.snappy.parquet, range: 0-10919, partition values: [empty row]
+2018-10-08 12:25:00 INFO  CodecPool:181 - Got brand-new decompressor [.snappy]
+2018-10-08 12:25:00 INFO  Executor:54 - Finished task 0.0 in stage 0.0 (TID 0). 8552 bytes result sent to driver
+2018-10-08 12:25:00 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 322 ms on localhost (executor driver) (1/1)
+2018-10-08 12:25:00 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2018-10-08 12:25:00 INFO  DAGScheduler:54 - ResultStage 0 (processCmd at CliDriver.java:376) finished in 0,396 s
+2018-10-08 12:25:00 INFO  ContextCleaner:54 - Cleaned accumulator 0
+2018-10-08 12:25:00 INFO  DAGScheduler:54 - Job 0 finished: processCmd at CliDriver.java:376, took 0,439427 s
+1	AAAAAAAABAAAAAAA	1997-08-16	NULL	site_0	2450807	NULL	Unknown	Ronald Shaffer	4	Grey lines ought to result indeed centres. Tod	Well similar decisions used to keep hardly democratic, personal priorities.	Joe George	6	cally	51	Dogwood Sunset	Ln	Suite 330	Midway	Williamson County	TN	31904	United States	-5.0	0.1
+2	AAAAAAAACAAAAAAA	1997-08-16	2000-08-15	site_0	2450798	2447148	Unknown	Tommy Jones	6	Completely excellent things ought to pro	Lucky passengers know. Red details will not hang alive, international s	David Myers	4	ese	358	Ridge Wilson	Cir.	Suite 150	Midway	Williamson County	TN	31904	United States	-5.0	0.0
+3	AAAAAAAACAAAAAAA	2000-08-16	NULL	site_0	2450798	2447148	Unknown	Tommy Jones	3	Completely excellent things ought to pro	Particular, common seasons shall not indicate fully more single decisions; 	David Myers	4	ese	753	7th 	Pkwy	Suite 210	Midway	Williamson County	TN	31904	United States	-5.0	0.02
+4	AAAAAAAAEAAAAAAA	1997-08-16	1999-08-16	site_0	2450781	2448956	Unknown	Harold Wilson	5	As strong notes deal questions. Proud visito	Deeply small books cannot extend all similar, clear historians. Free, new camp	James Harris	5	anti	805	Hill Hill	Dr.	Suite R	Midway	Williamson County	TN	31904	United States	-5.0	0.08
+5	AAAAAAAAEAAAAAAA	1999-08-17	2001-08-15	site_0	2450781	2448956	Unknown	Harold Wilson	5	Wide, final representat	Deeply small books cannot extend all similar, clear historians. Free, new camp	Edward George	1	ought	805	2nd 3rd	Road	Suite R	Fairview	Williamson County	TN	31904	United States	-5.0	0.08
+6	AAAAAAAAEAAAAAAA	2001-08-16	NULL	site_0	2450781	2448956	Unknown	Harold Wilson	5	Wide, final representat	Thin roles should run quickly. Patient parts include even in the ladies; only united trouser	John Sheppard	3	ought	63	Hickory 3rd	Ct.	Suite 130	Fairview	Williamson County	TN	31904	United States	-5.0	0.08
+7	AAAAAAAAHAAAAAAA	1997-08-16	NULL	site_1	2450756	NULL	Unknown	Moses Hicks	4	New homes comment great. Possibilities re	Enough small animals emerge at a holidays. Managers expect only.	William Reyes	4	ese	784	Central 	Dr.	Suite Q	Fairview	Williamson County	TN	35709	United States	-5.0	0.12
+8	AAAAAAAAIAAAAAAA	1997-08-16	2000-08-15	site_1	2450747	2448922	Unknown	Charles Parker	1	Only, temporary services 	Physical witnesses might not agree really already existing prayers. Loyal, possible m	Gerald Craft	5	anti	835	Washington 	Avenue	Suite 470	Midway	Williamson County	TN	31904	United States	-5.0	0.07
+9	AAAAAAAAIAAAAAAA	2000-08-16	NULL	site_1	2450747	2448922	Unknown	Marshall Conner	6	Labour cars withdraw big, full issues	Physical witnesses might not agree really already existing prayers. Loyal, possible m	Scott Bryant	1	anti	835	11th 	Cir.	Suite R	Midway	Williamson County	TN	31904	United States	-5.0	0.07
+10	AAAAAAAAKAAAAAAA	1997-08-16	1999-08-16	site_1	2450730	2447080	Unknown	Dwight Aaron	3	New, important system	Companies grow cells. Apart true eyes u	Frank Cooper	2	able	409	Lake 	Ct.	Suite 370	Midway	Williamson County	TN	31904	United States	-5.0	0.07
+11	AAAAAAAAKAAAAAAA	1999-08-17	2001-08-15	site_1	2450730	2447080	Unknown	Dwight Aaron	3	Right efforts must no	Companies grow cells. Apart true eyes u	Casey Banks	2	able	409	Cedar 	Parkway	Suite 350	Fairview	Williamson County	TN	35709	United States	-5.0	0.07
+12	AAAAAAAAKAAAAAAA	2001-08-16	NULL	site_1	2450730	2447080	Unknown	Richard Fuchs	3	Right efforts must no	Acres see else children. Mutual too	Casey Banks	2	able	409	Lincoln 	Pkwy	Suite D	Fairview	Williamson County	TN	35709	United States	-5.0	0.07
+13	AAAAAAAANAAAAAAA	1997-08-16	NULL	site_2	2450705	NULL	Unknown	John Thomas	2	About rural reasons shall no	Political affairs ought to	James Brewer	5	anti	973	Cherry Main	Boulevard	Suite D	Midway	Williamson County	TN	31904	United States	-5.0	0.07
+14	AAAAAAAAOAAAAAAA	1997-08-16	2000-08-15	site_2	2450696	2447046	Unknown	Robert Arnold	5	Necessary, intermediat	Associations may kill sole parents. Red, pink results rise nearly	Gilbert Chapman	5	anti	887	River 	Drive	Suite 390	Midway	Williamson County	TN	31904	United States	-5.0	0.07
+15	AAAAAAAAOAAAAAAA	2000-08-16	NULL	site_2	2450696	2447046	Unknown	James Austin	5	Necessary, intermediat	Associations may kill sole parents. Red, pink results rise nearly	Zachery Oneil	5	anti	887	Broadway South	Road	Suite 260	Midway	Williamson County	TN	31904	United States	-5.0	0.08
+16	AAAAAAAAABAAAAAA	1997-08-16	1999-08-16	site_2	2450679	2448854	Unknown	Herbert Hawes	6	Hard new suggestions might contain nat	Basic others will not appreciate so late, potential chil	Albert Leung	6	cally	841	West Cedar	Blvd	Suite D	Midway	Williamson County	TN	31904	United States	-5.0	0.04
+17	AAAAAAAAABAAAAAA	1999-08-17	2001-08-15	site_2	2450679	2448854	Unknown	Charles Castillo	5	New, different roads know standa	Basic others will not appreciate so late, potential chil	Keith Frazier	6	cally	841	Wilson Ridge	Way	Suite 20	Midway	Williamson County	TN	31904	United States	-5.0	0.04
+18	AAAAAAAAABAAAAAA	2001-08-16	NULL	site_2	2450679	2448854	Unknown	Charles Castillo	5	Broad, new groups show car	Basic others will not appreciate so late, potential chil	Keith Frazier	6	cally	841	Sycamore 	Wy	Suite 450	Fairview	Williamson County	TN	31904	United States	-5.0	0.01
+19	AAAAAAAADBAAAAAA	1997-08-16	NULL	site_3	2450654	NULL	Unknown	Jimmy Pope	2	Leaders make as yet particular, desperate machi	Home new thoughts must get however thoughts; technical, oth	Eldon Snow	5	anti	184	Hill 5th	Parkway	Suite 280	Midway	Williamson County	TN	31904	United States	-5.0	0.04
+20	AAAAAAAAEBAAAAAA	1997-08-16	2000-08-15	site_3	2450645	2448820	Unknown	Peter Cassidy	4	Just popular words shall 	Formerly long minds deal aside parties. Lef	Kelvin Lynch	3	pri	828	2nd 	Wy	Suite J	Midway	Williamson County	TN	31904	United States	-5.0	0.04
+21	AAAAAAAAEBAAAAAA	2000-08-16	NULL	site_3	2450645	2448820	Unknown	Adam Stonge	5	As private emotions carry yet services. Wor	Formerly long minds deal aside parties. Lef	Jarvis Allen	4	pri	828	1st Maple	Blvd	Suite U	Fairview	Williamson County	TN	35709	United States	-5.0	0.07
+22	AAAAAAAAGBAAAAAA	1997-08-16	1999-08-16	site_3	2450628	2446978	Unknown	Lewis Wolf	5	Severe, useful funds lift; just	Individual negotiations might join badly children. Brown features travel fiercely dramatic k	James Bernard	2	able	292	Elevnth Third	Wy	Suite 30	Midway	Williamson County	TN	31904	United States	-5.0	0.07
+23	AAAAAAAAGBAAAAAA	1999-08-17	2001-08-15	site_3	2450628	2446978	Unknown	Jason Silva	4	Severe, useful funds lift; just	Individual negotiations might join badly children. Brown features travel fiercely dramatic k	Jeffrey Martin	2	able	292	Railroad 	Court	Suite 440	Fairview	Williamson County	TN	31904	United States	-5.0	0.01
+24	AAAAAAAAGBAAAAAA	2001-08-16	NULL	site_3	2450628	2446978	Unknown	John Ward	4	Severe, useful funds lift; just	Individual negotiations might join badly children. Brown features travel fiercely dramatic k	Philip Sampson	2	able	292	Hickory Meadow	ST	Suite 460	Fairview	Williamson County	TN	31904	United States	-5.0	0.01
+25	AAAAAAAAJBAAAAAA	1997-08-16	NULL	site_4	2450603	NULL	Unknown	Julio Davis	3	Continuous, social schools shou	Concerned, royal weeks should announce.	Donald Mckinney	1	ought	671	Willow 	Drive	Suite T	Fairview	Williamson County	TN	35709	United States	-5.0	0.01
+26	AAAAAAAAKBAAAAAA	1997-08-16	2000-08-15	site_4	2450594	2446944	Unknown	William Carter	2	Also difficult women relax. Raw solutions exclude	Often well-known police can hand acres. Healthy, sensible problems make more silent recordings	Keith Williams	2	able	892	Cedar North	Drive	Suite 280	Midway	Williamson County	TN	31904	United States	-5.0	0.07
+27	AAAAAAAAKBAAAAAA	2000-08-16	NULL	site_4	2450594	2446944	Unknown	William Carter	2	Also difficult women relax. Raw solutions exclude	Often well-known police can hand acres. Healthy, sensible problems make more silent recordings	John Isaacs	5	able	892	Spruce 	Wy	Suite 200	Fairview	Williamson County	TN	35709	United States	-5.0	0.12
+28	AAAAAAAAMBAAAAAA	1997-08-16	1999-08-16	site_4	2450577	2448752	Unknown	Raymond Oneill	4	Hands look again nice years. Alre	Skills can want as common agencies. Appropriate issues can use. Over national lives may lear	Jeffrey Campbell	3	pri	730	Central 14th	Dr.	Suite Q	Midway	Williamson County	TN	31904	United States	-5.0	0.09
+29	AAAAAAAAMBAAAAAA	1999-08-17	2001-08-15	site_4	2450577	2448752	Unknown	Raymond Oneill	4	Well-known, patient proposals m	Skills can want as common agencies. Appropriate issues can use. Over national lives may lear	Jeffrey Campbell	3	pri	247	Park 	Boulevard	Suite 100	Midway	Williamson County	TN	31904	United States	-5.0	0.12
+30	AAAAAAAAMBAAAAAA	2001-08-16	NULL	site_4	2450577	2448752	Unknown	Raymond Oneill	4	Well-known, patient proposals m	Skills can want as common agencies. Appropriate issues can use. Over national lives may lear	Jeffrey Campbell	1	pri	247	South Third	Wy	Suite 210	Midway	Williamson County	TN	31904	United States	-5.0	0.05
+2018-10-08 12:25:00 INFO  SparkSQLCLIDriver:951 - Time taken: 1.856 seconds, Fetched 30 row(s)
+2018-10-08 12:25:01 INFO  AbstractConnector:318 - Stopped Spark@445821a6{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-10-08 12:25:01 INFO  SparkUI:54 - Stopped Spark web UI at http://192.168.0.101:4040
+2018-10-08 12:25:01 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2018-10-08 12:25:01 INFO  MemoryStore:54 - MemoryStore cleared
+2018-10-08 12:25:01 INFO  BlockManager:54 - BlockManager stopped
+2018-10-08 12:25:01 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2018-10-08 12:25:01 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2018-10-08 12:25:01 INFO  SparkContext:54 - Successfully stopped SparkContext
+2018-10-08 12:25:01 INFO  ShutdownHookManager:54 - Shutdown hook called
+2018-10-08 12:25:01 INFO  ShutdownHookManager:54 - Deleting directory /private/var/folders/z2/52r6zpqx4g79gdsyz01h48_w0000gn/T/spark-581b6170-8c88-4a4b-b8b4-3644603d6714
+2018-10-08 12:25:01 INFO  ShutdownHookManager:54 - Deleting directory /private/var/folders/z2/52r6zpqx4g79gdsyz01h48_w0000gn/T/spark-0a832bf5-c237-476d-9d6e-8f8f0bdd28b2

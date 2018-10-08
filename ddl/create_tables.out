@@ -1,0 +1,7 @@
+2018-10-08 13:28:22 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-10-08 13:28:22 INFO  HiveMetaStore:589 - 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+2018-10-08 13:28:23 INFO  ObjectStore:289 - ObjectStore, initialize called
+2018-10-08 13:28:23 INFO  Persistence:77 - Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+2018-10-08 13:28:23 INFO  Persistence:77 - Property datanucleus.cache.level2 unknown - will be ignored
+2018-10-08 13:28:23 INFO  ShutdownHookManager:54 - Shutdown hook called
+2018-10-08 13:28:23 INFO  ShutdownHookManager:54 - Deleting directory /private/var/folders/z2/52r6zpqx4g79gdsyz01h48_w0000gn/T/spark-45c3fcb3-413e-40f2-be72-836b2accd999

@@ -1,0 +1,8 @@
+# Ignoring the tpcds toolkit
+tpcds/
+
+# Ignoring the spark folder
+spark/
+
+# ignoring the dataset
+dataSet/
