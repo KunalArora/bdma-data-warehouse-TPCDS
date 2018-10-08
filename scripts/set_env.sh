@@ -4,7 +4,7 @@
 export SPARK_HOME=/Users/edoardo/Documents/BDMA/Data_Warehouses/Project/spark
 
 # Either true or false
-export GEN_DATA=false
+export GEN_DATA=true
 
 # Dataset location
 export DATA_DIR=/Users/edoardo/Documents/BDMA/Data_Warehouses/Project/dataSet
