@@ -15,8 +15,8 @@ fatal() {
 }
 
 verify_result() {
-  if [ $? -ne 1 ]; then
-    fatal $1
+  if [ $? -ne 0 ]; then
+    fatal "$1"
   fi
 }
 
@@ -59,9 +59,10 @@ done < $DDL/create_tables_template.sql > $DDL/create_tables.sql
 current_dir=$(pwd)
 cd $SPARK_HOME
 bin/spark-sql --conf spark.sql.catalogImplementation=hive -f ${DDL}/create_database.sql > ${DDL}/create_database.out
-# verify_result "Error in creating the database"
+verify_result "Error in creating the database"
 
 bin/spark-sql --conf spark.sql.catalogImplementation=hive -f ${DDL}/create_tables.sql > ${DDL}/create_tables.out
-# verify_result "Error in loading the tables"
+verify_result "Error in loading the tables"
 
 bin/spark-sql --conf spark.conf.catalogImplementation=hive -f ${DDL}/../query/select.sql
+verify_result "Error in querying the database"
