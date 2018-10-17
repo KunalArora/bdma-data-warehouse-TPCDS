@@ -21,15 +21,16 @@ verify_result() {
 }
 
 check_env() {
-  if [ -z "$SPARK_HOME" ]; then
-    fatal "SPARK_HOME env variable needs to be set"
-  fi
+  which impala-shell > /dev/null
+  #verify_result "Impala shell is not reachable from this directory. Exiting..."
 
   GEN_DATA=${GEN_DATA:="true"}
 
   if [ -z "$DATA_DIR" ]; then
     fatal "Directory for the data needs to be set"
   fi
+
+  OUTPUT_DIR=${OUTPUT_DIR:=.}
 }
 
 
@@ -53,19 +54,16 @@ while read line; do
 done < $DDL/create_database_template.sql > $DDL/create_database.sql
 
 while read line; do
-  line=${line//\"/\\\"}
-  eval "echo \"$line\"";
-done < $DDL/create_tables_template.sql > $DDL/create_tables.sql
+  eval "echo \"$line\""
+done < $DDL/create_tables_impala.sql > $DDL/create_tables.sql
 
 
-# Executing the command in SparkSQL
-current_dir=$(pwd)
-cd $SPARK_HOME
-bin/spark-sql --conf spark.sql.catalogImplementation=hive -f ${DDL}/create_database.sql > ${DDL}/create_database.out
+# Executing the SQL instructions in Cloudera Impala
+impala-shell -f ${DDL}/create_database.sql > ${OUTPUT_DIR}/create_database.out
 verify_result "Error in creating the database"
 
-bin/spark-sql --conf spark.sql.catalogImplementation=hive -f ${DDL}/create_tables.sql > ${DDL}/create_tables.out
+impala-shell -f ${DDL}/create_tables.sql > ${OUTPUT_DIR}/create_tables.out
 verify_result "Error in loading the tables"
 
-bin/spark-sql --conf spark.conf.catalogImplementation=hive -f ${DDL}/../query/select.sql
+impala-shell -f ${DDL}/../query/select.sql
 verify_result "Error in querying the database"
