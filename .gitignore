@@ -6,3 +6,5 @@ spark/
 
 # ignoring the dataset
 dataSet/
+
+report/
