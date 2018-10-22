@@ -34,10 +34,13 @@ checkEnv
 
 if [ "$GEN_DATA" = "true" ]; then
   current_dir=$(pwd)
+
   cd $TPCDS_ROOT_DIR/tools/
   echo "Generating the data..."
-  ./dsdgen -SCALE 1 -DIR $DATA_DIR -FORCE -VERBOSE
+  
+  ./dsdgen -SCALE 1 -DIR $DATA_DIR_ONDISC -FORCE -VERBOSE
   verify_result "Generation of dataset has failed"
+
   cd $current_dir
 fi
 
