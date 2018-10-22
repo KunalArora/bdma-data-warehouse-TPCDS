@@ -28,7 +28,7 @@ checkEnv() {
     verify_result "Erro trying to connect to hdfs"
 }
 
-ciao ;
+
 . ./set_env.sh
 checkEnv
 
