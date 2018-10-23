@@ -35,9 +35,9 @@ print_line > $outFile
 echo -e "Query number\t|\tExecution Time" >> $outFile
 echo "" >> $outFile
 
-for query_res_file in $(ls $QUERY_OUTPUT_DIR | grep .err)
+for query_res_file in $(ls $QUERY_OUTPUT_DIR | grep .log)
 do
-    query=${query_res_file%.err}
+    query=${query_res_file%.log}
     executionTime=$(cat $QUERY_OUTPUT_DIR/$query_res_file | grep Fetched | cut -f 5 -d ' ')
     echo -e "$query\t|\t$executionTime" >> $outFile
 done
