@@ -38,14 +38,6 @@ check_env() {
 . ./set_env.sh
 check_env
 
-if [ "$GEN_DATA" = "true" ]; then
-  current_dir=$(pwd)
-  cd $TPCDS_ROOT_DIR/tools/
-  ./dsdgen -SCALE 1 -DIR $DATA_DIR -FORCE -VERBOSE
-  verify_result "Generation of dataset has failed"
-  cd $current_dir
-fi
-
 # Evaluating the ddl scripts
 # according to the actual env variables
 DDL=$(pwd)/../ddl

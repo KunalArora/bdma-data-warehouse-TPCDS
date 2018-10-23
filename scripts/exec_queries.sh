@@ -54,7 +54,6 @@ check_env
 # done
 # cd $currentDir
 
-# sleep 2
 failed=0
 for query in $(ls ${QUERY_DIR})
 do
@@ -66,7 +65,9 @@ do
     echo "Executing $query..."
     print_line
 
-    impala-shell -f ${QUERY_DIR}/${query}.copy > ${QUERY_OUTPUT_DIR}/${query}.res 2> ${QUERY_OUTPUT_DIR}/${query}.log
+    impala-shell -f ${QUERY_DIR}/${query}.copy \
+        > ${QUERY_OUTPUT_DIR}/${query}.res \
+        2> ${QUERY_OUTPUT_DIR}/${query}.log
     result=$?
     rm ${QUERY_DIR}/${query}.copy
     sleep 1
@@ -86,5 +87,9 @@ done
 
 print_line
 echo "$failed queries have failed"
-echo "Exiting..."
+echo "Printing the summary..."
 print_line
+
+./run_summary.sh
+
+echo "Exiting..."
