@@ -48,7 +48,7 @@ verify_result "Error in generating the create database sql code"
 
 while read line; do
   eval "echo \"$line\""
-done < $DDL/create_tables_impala.sql > ${OUTPUT_DIR}/create_tables.sql
+done < $DDL/create_tables_impala_parquet.sql > ${OUTPUT_DIR}/create_tables.sql
 verify_result "Error in generating the create tables sql code"
 
 

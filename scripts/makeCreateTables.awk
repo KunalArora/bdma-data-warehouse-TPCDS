@@ -19,7 +19,7 @@ BEGIN {
                 printf (" ");
             }
             else if (i == 3) {
-                sub (/_text/, "", arr[i]);
+                # sub (/_text/, "", arr[i]);
                 print arr[i];
             }
             else {
@@ -28,12 +28,12 @@ BEGIN {
             }
         }
     }
-    else if ($0 ~ /.*_text;$/) {
-        sub (/_text/, "", $0);
-        match($0, / [A-Za-z0-9]*$/)
-        line = substr($0, RSTART, RLENGTH);
-        print line;
-    }
+    # else if ($0 ~ /.*_text;$/) {
+    #     sub (/_text/, "", $0);
+    #     match($0, / [A-Za-z0-9]*$/)
+    #     line = substr($0, RSTART, RLENGTH);
+    #     print line;
+    # }
     else if ($0 ~ /USING csv/) {
         flag = 1;
         print "ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'";
@@ -45,6 +45,10 @@ BEGIN {
         printf "LOCATION '${DATA_DIR}/"
         printf location
         print "';";
+
+        # Adding the parquet support
+        print "create table", location, "like", location"_text", "stored as parquet;"
+        print "insert overwrite table", location, "select * from", location"_text;"
     }
     else {
         print $0;
