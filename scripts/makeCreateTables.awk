@@ -47,8 +47,10 @@ BEGIN {
         print "';";
 
         # Adding the parquet support
+        print "drop table if exists", location";"
         print "create table", location, "like", location"_text", "stored as parquet;"
         print "insert overwrite table", location, "select * from", location"_text;"
+        print "drop table if exists", location"_text;"
     }
     else {
         print $0;

@@ -47,8 +47,10 @@ create external table call_center_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/call_center';
+drop table if exists call_center;
 create table call_center like call_center_text stored as parquet;
 insert overwrite table call_center select * from call_center_text;
+drop table if exists call_center_text;
 
 drop table if exists catalog_page_text;
 create external table catalog_page_text
@@ -65,8 +67,10 @@ create external table catalog_page_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/catalog_page';
+drop table if exists catalog_page;
 create table catalog_page like catalog_page_text stored as parquet;
 insert overwrite table catalog_page select * from catalog_page_text;
+drop table if exists catalog_page_text;
 
 drop table if exists catalog_returns_text;
 create external table catalog_returns_text
@@ -101,8 +105,10 @@ create external table catalog_returns_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/catalog_returns';
+drop table if exists catalog_returns;
 create table catalog_returns like catalog_returns_text stored as parquet;
 insert overwrite table catalog_returns select * from catalog_returns_text;
+drop table if exists catalog_returns_text;
 
 
 drop table if exists catalog_sales_text;
@@ -145,8 +151,10 @@ create external table catalog_sales_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/catalog_sales';
+drop table if exists catalog_sales;
 create table catalog_sales like catalog_sales_text stored as parquet;
 insert overwrite table catalog_sales select * from catalog_sales_text;
+drop table if exists catalog_sales_text;
 
 drop table if exists customer_text;
 create external table customer_text
@@ -172,8 +180,10 @@ create external table customer_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/customer';
+drop table if exists customer;
 create table customer like customer_text stored as parquet;
 insert overwrite table customer select * from customer_text;
+drop table if exists customer_text;
 
 
 drop table if exists customer_address_text;
@@ -195,8 +205,10 @@ create external table customer_address_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/customer_address';
+drop table if exists customer_address;
 create table customer_address like customer_address_text stored as parquet;
 insert overwrite table customer_address select * from customer_address_text;
+drop table if exists customer_address_text;
 
 drop table if exists customer_demographics_text;
 create external table customer_demographics_text
@@ -213,8 +225,10 @@ create external table customer_demographics_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/customer_demographics';
+drop table if exists customer_demographics;
 create table customer_demographics like customer_demographics_text stored as parquet;
 insert overwrite table customer_demographics select * from customer_demographics_text;
+drop table if exists customer_demographics_text;
 
 drop table if exists date_dim_text;
 create external table date_dim_text
@@ -250,8 +264,10 @@ create external table date_dim_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/date_dim';
+drop table if exists date_dim;
 create table date_dim like date_dim_text stored as parquet;
 insert overwrite table date_dim select * from date_dim_text;
+drop table if exists date_dim_text;
 
 drop table if exists household_demographics_text;
 create external table household_demographics_text
@@ -264,8 +280,10 @@ create external table household_demographics_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/household_demographics';
+drop table if exists household_demographics;
 create table household_demographics like household_demographics_text stored as parquet;
 insert overwrite table household_demographics select * from household_demographics_text;
+drop table if exists household_demographics_text;
 
 drop table if exists income_band_text;
 create external table income_band_text
@@ -276,8 +294,10 @@ create external table income_band_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/income_band';
+drop table if exists income_band;
 create table income_band like income_band_text stored as parquet;
 insert overwrite table income_band select * from income_band_text;
+drop table if exists income_band_text;
 
 drop table if exists inventory_text;
 create external table inventory_text
@@ -289,8 +309,10 @@ create external table inventory_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/inventory';
+drop table if exists inventory;
 create table inventory like inventory_text stored as parquet;
 insert overwrite table inventory select * from inventory_text;
+drop table if exists inventory_text;
 
 drop table if exists item_text;
 create external table item_text
@@ -320,8 +342,10 @@ create external table item_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/item';
+drop table if exists item;
 create table item like item_text stored as parquet;
 insert overwrite table item select * from item_text;
+drop table if exists item_text;
 
 drop table if exists promotion_text;
 create external table promotion_text
@@ -348,8 +372,10 @@ create external table promotion_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/promotion';
+drop table if exists promotion;
 create table promotion like promotion_text stored as parquet;
 insert overwrite table promotion select * from promotion_text;
+drop table if exists promotion_text;
 
 drop table if exists reason_text;
 create external table reason_text
@@ -360,8 +386,10 @@ create external table reason_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/reason';
+drop table if exists reason;
 create table reason like reason_text stored as parquet;
 insert overwrite table reason select * from reason_text;
+drop table if exists reason_text;
 
 drop table if exists ship_mode_text;
 create external table ship_mode_text
@@ -375,8 +403,10 @@ create external table ship_mode_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/ship_mode';
+drop table if exists ship_mode;
 create table ship_mode like ship_mode_text stored as parquet;
 insert overwrite table ship_mode select * from ship_mode_text;
+drop table if exists ship_mode_text;
 
 drop table if exists store_text;
 create external table store_text
@@ -413,8 +443,10 @@ create external table store_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/store';
+drop table if exists store;
 create table store like store_text stored as parquet;
 insert overwrite table store select * from store_text;
+drop table if exists store_text;
 
 drop table if exists store_returns_text;
 create external table store_returns_text
@@ -442,8 +474,10 @@ create external table store_returns_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/store_returns';
+drop table if exists store_returns;
 create table store_returns like store_returns_text stored as parquet;
 insert overwrite table store_returns select * from store_returns_text;
+drop table if exists store_returns_text;
 
 drop table if exists store_sales_text;
 create external table store_sales_text
@@ -474,8 +508,10 @@ create external table store_sales_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/store_sales';
+drop table if exists store_sales;
 create table store_sales like store_sales_text stored as parquet;
 insert overwrite table store_sales select * from store_sales_text;
+drop table if exists store_sales_text;
 
 drop table if exists time_dim_text;
 create external table time_dim_text
@@ -493,8 +529,10 @@ create external table time_dim_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/time_dim';
+drop table if exists time_dim;
 create table time_dim like time_dim_text stored as parquet;
 insert overwrite table time_dim select * from time_dim_text;
+drop table if exists time_dim_text;
 
 drop table if exists warehouse_text;
 create external table warehouse_text
@@ -516,8 +554,10 @@ create external table warehouse_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/warehouse';
+drop table if exists warehouse;
 create table warehouse like warehouse_text stored as parquet;
 insert overwrite table warehouse select * from warehouse_text;
+drop table if exists warehouse_text;
 
 drop table if exists web_page_text;
 create external table web_page_text
@@ -539,8 +579,10 @@ create external table web_page_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/web_page';
+drop table if exists web_page;
 create table web_page like web_page_text stored as parquet;
 insert overwrite table web_page select * from web_page_text;
+drop table if exists web_page_text;
 
 drop table if exists web_returns_text;
 create external table web_returns_text
@@ -572,8 +614,10 @@ create external table web_returns_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/web_returns';
+drop table if exists web_returns;
 create table web_returns like web_returns_text stored as parquet;
 insert overwrite table web_returns select * from web_returns_text;
+drop table if exists web_returns_text;
 
 drop table if exists web_sales_text;
 create external table web_sales_text
@@ -615,8 +659,10 @@ create external table web_sales_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/web_sales';
+drop table if exists web_sales;
 create table web_sales like web_sales_text stored as parquet;
 insert overwrite table web_sales select * from web_sales_text;
+drop table if exists web_sales_text;
 
 drop table if exists web_site_text;
 create external table web_site_text
@@ -650,5 +696,7 @@ create external table web_site_text
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 LOCATION '${DATA_DIR}/web_site';
+drop table if exists web_site;
 create table web_site like web_site_text stored as parquet;
 insert overwrite table web_site select * from web_site_text;
+drop table if exists web_site_text;
