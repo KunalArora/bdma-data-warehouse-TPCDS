@@ -1,0 +1,84 @@
+#############################
+Query number	|	Execution Time
+
+query11.sql	|	15.67s
+query12.sql	|	2.07s
+query13.sql	|	
+query15.sql	|	2.55s
+query16.sql	|	5.62s
+query17.sql	|	10.61s
+query19.sql	|	6.87s
+query1.sql	|	2.05s
+query20.sql	|	3.06s
+query21.sql	|	2.84s
+query25.sql	|	11.10s
+query26.sql	|	3.16s
+query28.sql	|	13.30s
+query29.sql	|	10.61s
+query2.sql	|	7.17s
+query30.sql	|	2.06s
+query31.sql	|	13.21s
+query32.sql	|	6.49s
+query33.sql	|	7.91s
+query34.sql	|	3.55s
+query37.sql	|	5.34s
+query39.sql	|	6.78s
+6.68s
+query3.sql	|	6.15s
+query40.sql	|	4.19s
+query41.sql	|	
+query42.sql	|	5.55s
+query43.sql	|	
+query46.sql	|	4.35s
+query47.sql	|	32.74s
+query48.sql	|	
+query49.sql	|	8.14s
+query4.sql	|	25.35s
+query50.sql	|	6.42s
+query51.sql	|	18.65s
+query52.sql	|	6.16s
+query53.sql	|	8.69s
+query54.sql	|	10.66s
+query55.sql	|	5.45s
+query56.sql	|	8.24s
+query57.sql	|	15.18s
+query58.sql	|	11.14s
+query59.sql	|	7.14s
+query60.sql	|	8.13s
+query61.sql	|	7.74s
+query62.sql	|	5.09s
+query63.sql	|	8.49s
+query64.sql	|	24.23s
+query65.sql	|	9.30s
+query66.sql	|	8.39s
+query68.sql	|	4.46s
+query69.sql	|	6.53s
+query6.sql	|	6.98s
+query71.sql	|	8.22s
+query72.sql	|	
+query73.sql	|	2.94s
+query74.sql	|	14.65s
+query75.sql	|	18.72s
+query76.sql	|	5.90s
+query78.sql	|	11.62s
+query79.sql	|	3.96s
+query7.sql	|	4.15s
+query81.sql	|	2.28s
+query82.sql	|	8.77s
+query83.sql	|	3.92s
+query84.sql	|	1.53s
+query85.sql	|	10.84s
+query88.sql	|	23.43s
+query89.sql	|	9.30s
+query90.sql	|	3.09s
+query91.sql	|	1.74s
+query92.sql	|	3.79s
+query93.sql	|	4.74s
+query94.sql	|	4.79s
+query95.sql	|	36.28s
+query96.sql	|	3.07s
+query97.sql	|	6.70s
+query98.sql	|	11.63s
+query99.sql	|	3.05s
+README.md	|	
+#############################
