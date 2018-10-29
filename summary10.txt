@@ -3,7 +3,7 @@ Query number	|	Execution Time
 
 query11.sql	|	27.40s
 query12.sql	|	7.13s
-query13.sql	|	
+query13.sql	|	16.21s
 query15.sql	|	9.63s
 query16.sql	|	11.11s
 query17.sql	|	9.45s
@@ -16,22 +16,21 @@ query26.sql	|	5.16s
 query28.sql	|	7.98s
 query29.sql	|	6.37s
 query2.sql	|	7.08s
-query30.sql	|	
+query30.sql	|	11.79s
 query31.sql	|	12.28s
 query32.sql	|	3.83s
 query33.sql	|	6.64s
 query34.sql	|	2.44s
 query37.sql	|	6.55s
 query39.sql	|	13.01s
-12.62s
 query3.sql	|	3.55s
 query40.sql	|	2.45s
-query41.sql	|	
+query41.sql	|	5.76s
 query42.sql	|	3.13s
 query43.sql	|	3.25s
 query46.sql	|	3.16s
 query47.sql	|	16.24s
-query48.sql	|	
+query48.sql	|	25.91s
 query49.sql	|	6.62s
 query4.sql	|	21.30s
 query50.sql	|	3.17s
@@ -55,7 +54,7 @@ query68.sql	|	3.15s
 query69.sql	|	5.64s
 query6.sql	|	7.00s
 query71.sql	|	6.42s
-query72.sql	|	
+query72.sql	|	12.97s
 query73.sql	|	2.14s
 query74.sql	|	14.16s
 query75.sql	|	14.69s
